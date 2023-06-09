@@ -1,0 +1,318 @@
+<html>
+<head>
+<title>Shree Diamond Tools</title>
+</head>
+<style type="text/css">
+.head
+{
+height:140px;
+width:100%;
+position:fixed;
+background-color:#333;
+left:0px;
+top:0px;
+color:orange;
+}
+.head h1
+{
+left:20px;
+position:relative;
+top:10px;
+font-family:serif;
+}
+.menu
+{
+height:100%;
+width:300px;
+background-color:#333;
+border-top:1px solid orange;
+opacity:19;
+display:none;
+left:0.5px;
+top:140.5px;
+opacity:0.9;
+position:fixed;
+}
+.menu button
+{
+height:46px;
+width:100%;
+background-color:#333;
+color:white;
+border:none;
+margin:5px 0px;
+font-family:serif;
+color:orange;
+}
+.menu button:hover
+{
+height:46px;
+width:100%;
+background-color:#333;
+color:white;
+border:none;
+margin:5px 0px;
+font-family:serif;
+
+border-bottom:1px solid orange;
+color:orange;
+}
+.post
+{
+width:90%;
+box-shadow:2px 2px 40px lightgray;
+}
+.endweb
+{
+height:100px;
+width:100%;
+bottom:1px;
+
+background-color:white;
+color:#333;
+box-shadow:2px -2px 4px lightgray;
+left:0px;
+}
+img
+{
+height:300px;
+width:300px;
+box-shadow:2px 4px 6px gray;
+
+}
+.imgsell
+{
+height:150px;
+width:300px;
+background-color:#333;
+
+box-shadow:2px 2px 4px gray;
+}
+.imgsell button
+{
+height:46px;
+width:100%;
+background-color:green;
+color:white;
+border:none;
+margin:5px 0px;
+font-family:serif;
+}
+.divform
+{
+height:300px;
+width:94%;
+background-color:#333;
+box-shadow:2px 4px 6px gray;
+position:fixed;
+top:150px;
+display:none;
+color:orange;
+}
+input
+{
+height:40px;
+width:70%;
+border:none;
+float:right;
+}
+.divform button
+{
+height:40px;
+width:30%;
+border:none;
+float:right;
+}
+.later{
+background-color:red;
+color:white;
+
+}
+.call
+{
+height:70px;
+width:70px;
+background-color:#333;
+position:fixed;
+bottom:50px;
+right:10px;
+border-radius:100px;
+border:none;
+color:orange;
+font-size:30px;
+}
+a{
+text-decoration:none;
+}
+</style>
+
+<body>
+<div class="head">
+<center>
+<h1>SHREE DIAMOND TOOLS</h1>
+
+<h4><pre><p>      Jaipur,Rajesthan
+</p></pre></h4></center>
+<div id="menubtn">
+<font style="float:left;position:fixed;top:100px;font-size:20px;left:10px;"onclick="menu()"id="menubt">&#9776</font>
+</div>
+</div>
+
+<div class="menu"id="menu"onmouseout="cross()">
+<button onclick="tools()">Tools</button>
+<button onclick="image()">Images</button>
+<button onclick="cnc()">CNC Tools</button>
+<button onclick="order()">Order</button>
+<button onclick="aboutus()">Overview</button>
+<button onclick="privacy()">Privacy</button>
+<a href="tel:918079043438" >
+<button onclick="contact()">Contact</button>
+</a><br>
+<br>
+<font color="orange"style="font-family:serif">
+<center>
+powered by<br>
+<br>
+SHREE DIAMOND TOOLS
+</font>
+
+</div>
+<br><br><br><br><br><br><br><br>
+<center>
+<table border="1">
+
+
+
+<img src="https://diamondstools.blogspot.com/tools/">
+<br>
+<div class="imgsell">
+<font color="orange">
+<h2>2mm Tools</h2>
+Price:10/piece
+<br>
+Available-product:476
+<button onclick="order()">Order</button>
+</div>
+<hr>
+<br>
+<img src="https://diamondstools.blogspot.com/tools/">
+<br>
+<div class="imgsell">
+<font color="orange">
+<h2>CNC Tools</h2>
+Price:22/piece
+<br>
+Available-product:200
+<button onclick="order()">Order</button>
+</div>
+<hr>
+<br>
+<img src="https://diamondstools.blogspot.com/tools/">
+<br>
+<div class="imgsell">
+<font color="orange">
+<h2>Chakery</h2>
+Price:13/piece
+<br>
+Available-product:700
+<button onclick="order()">Order</button>
+</div>
+
+<hr>
+<br>
+<img src="https://diamondstools.blogspot.com/tools/">
+<br>
+<div class="imgsell">
+<font color="orange">
+<h2>Bantha</h2>
+Price:8/piece
+<br>
+Available-product:360
+<button onclick="order()">Order</button>
+</div>
+
+
+
+
+
+
+
+
+<br>
+<div class="endweb">
+<br>
+Privacy<br>
+Terms
+<br>
+
+</div>
+</font></font></font></font></table></center></center>
+
+<div id="order"class="divform">
+<br>
+
+<form action=""method="get"onsubmit="return(velid())"name="form">
+<td>Name:<input placeholder="Enter your name"name="name"maxlength="18"></td>
+<br>
+<td>mobile no:<input placeholder="Enter your mobile no"name="tel"type="number"maxlength="12"></td>
+<br>
+<td>Aadhar no:<input placeholder="Enter your aadhar card nomber"name="aadhar"type="number"minlength="4"></td>
+<br>
+<td>Product name:<input placeholder="Enter your selected product name"name="prdname">
+<br>
+<td>Product piece:<input type="number"placeholder="how many product piece do you want?"name="piece">
+<br>
+<br><br><br>
+<button type="submit"onclick="sub()">Order</button>
+</form>
+<button class="later"onclick="later()">Later</button>
+</div>
+
+</td></td>
+<a href="tel:918079043438" >
+<button class="call">&#128100</button></a>
+
+<script type="text/javascript">
+function velid()
+{
+name=document.form.name.value==""
+tel=document.form.tel.value==""
+aadhar=document.form.aadhar.value==""
+prdname=document.form.prdname.value==""
+piece=document.form.piece.value==""
+if(name&&tel&&aadhar&&prdname&&piece)
+{
+return false;
+}
+}
+
+
+
+function order()
+{
+document.getElementById("order").style.display="block"
+
+}
+function later()
+{
+document.getElementById("order").style.display="none"
+
+}
+function menu()
+{
+document.getElementById("menu").style.display="block"
+document.getElementById("menubtn").innerHTML='<font style="position:fixed;top:93px;left:100px;font-size:30px;left:10px;"onclick="cross()"id="menubt">&times</font>'
+}
+function cross()
+{
+document.getElementById("menu").style.display="none"
+document.getElementById("menubtn").innerHTML='<font style="float:left;position:fixed;top:100px;font-size:20px;left:10px;"onclick="menu()"id="menubt">&#9776</font>'
+}
+
+</script>
+</body>
+</html>
+<h1>
+
+
+</h1>
