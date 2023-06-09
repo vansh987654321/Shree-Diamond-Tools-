@@ -1,5 +1,5 @@
 <h1>Shree Diamond-Tools Tools
-<html>
+<>
 <head>
 <title>Shree Diamond Tools</title>
 </head>
@@ -17,7 +17,7 @@ color:orange;
 .head h1
 {
 left:20px;
-position:relative;
+position:
 top:10px;
 font-family:serif;
 }
